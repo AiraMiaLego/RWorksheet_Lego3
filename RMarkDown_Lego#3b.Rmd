@@ -1,6 +1,8 @@
 ---
 title: "RMarkDown_Lego3b"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 date: "2023-10-04"
 ---
 ## R Markdown
@@ -96,7 +98,7 @@ print(str(df))
 ```{r}
 library(readr)
 HouseholdData <- read_csv("HouseholdData.csv")
-View(HouseholdData)
+HouseholdData
 ```
 
 ##b. Convert the Sex into factor using factor() function and change it into integer.[Legend:Male = 1 and Female = 2].
@@ -130,5 +132,19 @@ num3_f<- subset(HouseholdData, `Siblings at School` >= 5)
 num3_f
 ```
 ##4. Interpret the graph.
+##Sentiments of Tweets Per Day
+##1.July 14, 2020: There were a total of 5,800 tweets. Among these, 2,500 were negative, 1,500 were neutral, and 1,800 were positive.
+
+##2.July 15, 2020: On this day, there were a total of 10,100 tweets. Out of these, 4,200 were negative, 2,800 were neutral, and 3,100 were positive.
+
+##3. July 17, 2020: There were 8,100 tweets in total. Of these, 3,300 were negative, 2,000 were neutral, and 2,800 were positive.
+
+##4.July 18, 2020: On this day, there were 8,100 tweets as well. Out of these, 3,300 were negative, 2,200 were neutral, and 2,600 were positive.
+
+##5.July 20, 2020: There were 5,100 tweets in total. Among these, 2,300 were negative, 1,300 were neutral, and 1,500 were positive.
+
+##6.July 21, 2020: The total number of tweets was 10,300. Out of these, 4,000 were negative, 2,800 were neutral, and 3,500 were positive.
+
+##According to the graph the negative sentiments are most tweets per day, while positive sentiments are in second place and neutral sentiments are always been last.
 
 
